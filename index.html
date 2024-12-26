@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://logos-download.com/wp-content/uploads/2019/11/Indian_Railway_Logo_2.png">
+</head>
+<body>
+    <img c="https://tse1.mm.bing.net/th?id=OIP.I8CRn8Fu9CMPg0atQ1KWKwHaE8&pid=Api&P=0&h=180" id="img1">
+    <div class="ticket">
+        <header>
+            <h1>Railway Ticket Booking</h1>
+            <p>Official Railway Booking Portal</p>
+        </header>
+
+        <form id="ticketForm">
+            <div class="ticket-row">
+                <label for="name">Passenger Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="ticket-row">
+                <label for="train">Train Name:</label>
+                <input type="text" id="train" placeholder="Enter train name or number" required>
+            </div>
+
+            <div class="ticket-row">
+                <label for="source">From (Source):</label>
+                <input type="text" id="source" placeholder="Enter source station" required>
+            </div>
+
+            <div class="ticket-row">
+                <label for="destination">To (Destination):</label>
+                <input type="text" id="destination" placeholder="Enter destination station" required>
+            </div>
+
+            <div class="ticket-row">
+                <label for="date">Date of Travel:</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="ticket-row">
+                <label for="class">Class:</label>
+                <select id="class" required>
+                    <option value="">-- Select Class --</option>
+                    <option value="1A">First AC (1A)</option>
+                    <option value="2A">Second AC (2A)</option>
+                    <option value="3A">Third AC (3A)</option>
+                    <option value="SL">Sleeper (SL)</option>
+                    <option value="CC">Chair Car (CC)</option>
+                </select>
+            </div>
+
+            <div class="ticket-footer">
+                <button type="submit">Book Ticket</button>
+            </div>
+        </form>
+    </div>
+    <img c="https://tse2.mm.bing.net/th?id=OIP.ESxBo0f2O3FlzG6_r8sL6AHaHa&pid=Api&P=0&h=180" id="img2">
+    <script src="script.js"></script>
+</body>
+</html>
